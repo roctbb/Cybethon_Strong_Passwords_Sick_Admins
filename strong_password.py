@@ -25,7 +25,7 @@ def index():
 
 @app.route('/', methods=['POST'])
 def answer():
-    if request.form.get('token', None) == "94177166-14cf-4034-9693-1236239404aa":
+    if request.form.get('token', None) == "TOKEN":
         return "FLAG"
     return "Access Denied!"
 
